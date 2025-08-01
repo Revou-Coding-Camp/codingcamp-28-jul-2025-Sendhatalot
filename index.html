@@ -1,11 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio</title>
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      #profile,
+      #portfolio,
+      #message,
+      footer {
+        text-align: left;
+      }
+      #profile h2,
+      #portfolio h2,
+      #message h2 {
+        text-align: left !important;
+      }
+    </style>
   </head>
   <body>
-    haii
+    <header>
+      <div class="logo">
+        <img src="img/foto_saya.jpg" alt="Logo Saya" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#profile">Our Profile</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#message">Message Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+
+    <section class="hero">
+      <h1 style="text-align: left">
+        Hi <span id="username">[Nama]</span>, Selamat Datang di Website
+      </h1>
+      <p style="text-align: left">
+        Ini merupakan portofolio saya yang berisi berbagai proyek dan keahlian
+        yang saya miliki. Silakan jelajahi dan hubungi saya jika ada pertanyaan
+        atau kolaborasi yang ingin dilakukan.
+      </p>
+    </section>
+    <hr />
+
+    <section id="profile">
+      <h2>Our Profile</h2>
+      <h3 class="subprofile">Keahlian & Spesialisasi</h3>
+      <ul class="subprofile">
+        <li>HTML, CSS, dan JavaScript</li>
+        <li>Desain UI/UX yang intuitif</li>
+        <li>Responsive Web Design (Mobile & Desktop)</li>
+        <li>Version Control dengan Git & GitHub</li>
+      </ul>
+
+      <h3 class="subprofile">Tools yang Digunakan</h3>
+      <ul class="subprofile">
+        <li>Visual Studio Code</li>
+        <li>Figma</li>
+        <li>GitHub</li>
+      </ul>
+    </section>
+    <hr />
+
+    <section id="portfolio">
+      <h2>Portofolio Saya</h2>
+      <div class="portfolio-grid">
+        <div class="card">
+          <p style="text-align: left">
+            Saya sedang belajar dan mengembangkan skill. Nantikan update
+            portofolio saya di sini!
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <section id="message">
+      <h2>Pesan untuk Kami</h2>
+      <form id="contactForm">
+        <label>Nama:<br /><input type="text" id="name" required /></label><br />
+        <label
+          >Tanggal Lahir:<br /><input
+            type="date"
+            id="birthdate"
+            required /></label
+        ><br />
+        <label
+          >Jenis Kelamin:<br />
+          <select id="gender">
+            <option value="">--Pilih--</option>
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+          </select> </label
+        ><br />
+        <label
+          >Pesan:<br />
+          <textarea id="messageText" required></textarea></label
+        ><br />
+        <button type="submit">Kirim</button>
+      </form>
+      <div id="formResult"></div>
+    </section>
+    <hr />
+
+    <footer>
+      <p>Dibuat oleh <span id="footerName">[Nama]</span></p>
+    </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
